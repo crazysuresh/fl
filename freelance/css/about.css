@@ -1,0 +1,586 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+@font-face {
+   font-family: 'Montserrat', sans-serif;
+    src: url(../font/static/Montserrat-Medium.ttf);
+    src: local( 'Poppins', sans-serif),url(../font/static/Montserrat-Medium.ttf) format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  @font-face {
+   font-family: 'Montserrat', sans-serif;
+    src: url(../font/static/Montserrat-Black.ttf);
+    src: local( 'Poppins', sans-serif),url(../font/static/Montserrat-Black.ttf) format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  
+  @font-face {  
+   font-family: 'Montserrat', sans-serif;
+    src: url(../font/static/Montserrat-Regular.ttf);
+    src: local( 'Poppins', sans-serif),url(../font/static/Montserrat-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+.section_title{
+    padding: 55px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+}
+
+.highlight{
+    color: crimson;
+}
+
+
+.title{
+    font-family: 'Montserrat' sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+    text-align: center;
+    color: #fff;
+}
+
+
+ /* navbar */
+ .navbar-nav{
+    margin-left: auto;
+    font-family: 'Montserrat' sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(65, 65, 66);
+ }
+
+ .dropdown-menu .dropdown-item{
+    color: #fff;
+}
+
+.navbar .nav-item .nav-link:hover{
+    color: #5029bc !important;
+ }
+ 
+ .nav-link.ac{
+    color: #3e2093 !important;
+ }
+ 
+ .navbar-nav .nav-item{
+    margin: 0px 10px auto;
+  
+ }
+
+
+ 
+/* navbar dropdown hover */
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .dropdown-menu{ display: block;}
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
+
+ #home{
+    padding: 220px 0;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/about_hero.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	position: relative;
+	z-index: 1;
+ }
+
+ 
+#home::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgb(6, 1, 37);
+	opacity: 0.7;
+	z-index: -1;
+}
+
+/* second */
+ #second{
+    background-color: #fff;
+    padding: 120px;
+} 
+
+
+#second .tabContainer .buttonContainer button{
+    height:60px;
+    width:100px;
+   }
+
+   #second .vm{
+    margin-left: 30px;
+   }
+
+.second_title{
+    font-family: 'Montserrat' sans-serif;
+    font-size: 70px;
+    color: #000;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 122.5%;
+}
+
+
+.tabContainer{
+    position: relative;
+    top: 20px;
+    right: 40px;
+   }
+
+ .buttonContainer{
+    position: relative;
+    left: 0px;
+ }
+
+
+.tabContainer .tabPanel{
+   
+    background-color: none;
+    color: rgb(102, 101, 101);
+    text-align: left;
+    margin-top: 20px;
+    box-sizing: border-box;
+    font-family: 'Montserrat' sans-serif;
+    font-size: 18px;
+    display: none;
+   
+}
+
+
+/* history */
+  #history{
+   
+    background: #130231;
+    color:#eeeded;
+
+} 
+
+ #history .card{
+    background: linear-gradient(180deg, rgba(91, 130, 145, 0.7) 5%, rgba(91, 130, 145, 0.4) 30%, rgba(91, 130, 145, 0.1) 80%);
+    border: none;
+    border-radius: 0%;
+    height: 15rem;
+    width: 17rem;
+    text-align: center;
+} 
+
+.gap{
+    gap: 10px;
+}
+
+#history svg{
+    margin: 20px;
+    position: relative;
+    top:40px;
+}
+
+
+ 
+
+
+/* why-section */
+#why{
+    padding: 30px 0px;
+    background-color: #fff;
+}
+   
+#why p{
+    padding-bottom: 60px;
+}
+
+#why .card{
+    background-color: rgb(128, 128, 129) !important ;
+    width: 32rem;
+    height: 8rem;
+    border: none;
+    color: #ffffff;
+    font-family: 'Montserrat' sans-serif;
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+   
+
+} 
+
+.img-4{
+    position: relative;
+    bottom: 13px;
+}
+
+ .card-4{
+    position: relative;
+    bottom: 40px;
+} 
+
+#why svg{
+    width: 100px;
+    height: 100px;
+} 
+
+
+
+
+
+/* testimonial */
+#testi{
+    padding-bottom: 100px ;
+    background-color: #efeff0;
+}
+
+/*footer */
+#footer{
+    background:#080808;
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: center;
+} 
+
+#footer .ft {
+    padding: 50px;
+    
+}
+
+#footer .ft p{
+color: #807d7d;
+}
+
+#footer ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+#footer ul li a:hover{
+    color: #5029bc;
+}
+
+
+#footer .catelogue_btn{
+    height: 45px;
+  width: 200px;
+    margin-top: 30px;
+    margin-left: 20px;
+  background-color: #3e2093;
+  border: none;
+  color: #fff;
+  opacity: 90%;
+  border-radius: 40px;
+  font-size: 18px;
+  font-style: normal;
+    font-weight: 400;
+  }
+
+
+
+.footer_caption{
+    margin-top: 130px;
+}
+
+#footer ul{
+    list-style: none;
+    display: flex;
+}
+
+
+#footer button{
+    height: 45px;
+	width: 145px;
+    margin-top: 30px;
+	background-color: #3e2093;
+	border: none;
+	color: #fff;
+	opacity: 90%;
+	border-radius: 40px;
+	font-size: 18px;
+	font-style: normal;
+    font-weight: 400;
+}
+
+#footer button:hover {
+    background: #5029bc;
+}
+
+.cap-1{
+    width: 30%;
+}
+.cap-2{
+    width: 70%;
+}
+
+/* copyright */
+
+ #cr{
+    background: #fff;
+} 
+  
+ #cr h4{
+    color: #1c1e1f;
+    font-family: 'Montserrat' sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+  }  
+  
+
+  @media screen and (min-width:992px) and (max-width:1024px){
+    #second{
+        padding: 0;
+        margin: 40px 0;
+    }
+
+    #history .card{
+        font-size: 13px;
+        width: 14rem;
+        height: 12rem;
+    }
+
+    #history svg{
+        width:100%;
+        height:100%;
+        margin: 10px 0;
+   }
+
+  
+
+   #why{
+    padding:0px;
+}
+   
+    #why .card{
+        width: 28rem;
+        height: 8rem;
+
+    }
+     
+    #footer ul li a{
+   
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    
+    #footer ul{
+        padding: 0;
+    }
+} 
+
+
+@media screen and (min-width:320px) and (max-width:767px){
+    
+        .title{
+            font-size: 48px;
+         }
+
+         #second{
+            padding: 10px;
+            margin-bottom: 25px;
+         }
+         .second_title{
+            font-size: 40px;
+            width: 250px;
+        }
+    
+        .tabContainer .tabPanel{
+            font-size: 12px;
+        }
+        .tabContainer{
+            top:0;
+            width: 800px;
+        }
+        .s-1{
+           padding-bottom: 20px;
+        }
+        .hd{
+            margin-left: 10px;
+        }
+
+
+        #history{
+            padding-bottom: 30px;
+        }
+        #history .card{
+            font-size: 14px;
+            width: 15rem;
+            height: 13rem;
+        }
+
+        #history svg{
+            display: none;
+        }
+
+
+        
+    .gap{
+        gap: 20px;
+        width: 230px;
+        position: relative;
+        left:40px;
+    }
+
+    .section_title{
+        font-size: 30px;
+        padding: 30px;
+    }
+
+    #why{
+        padding:0px;
+    }
+
+    #why .card{
+        width: 18rem;
+        height: 8rem;
+        font-size: 16px;
+    } 
+
+    #why p{
+        padding-bottom: 20px;
+    }
+
+
+
+    #footer .ft{
+      
+        padding: 40px 0;
+    }
+
+    #footer ul li a{
+       
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    #footer ul{
+        padding: 0;
+    }
+
+    .footer_caption{
+        margin-top: 80px;
+    }
+        
+    #second .tabContainer .buttonContainer button{
+     height:45px;
+     width:73px;
+    }
+
+    .buttonContainer{
+        position: relative;
+        left: 10px;
+     }
+     }
+
+
+
+
+@media screen and (min-width:768px) and (max-width:991px){
+    
+    #second{
+       
+        padding: 20px;
+        margin: 30px 0;
+     }
+
+     .second_title{
+        font-size: 40px;
+        width: 300px;
+    }
+
+    .tabContainer .tabPanel{
+        font-size: 12px;
+    }
+    .tabContainer{
+        top:0;
+    }
+
+    .buttonContainer{
+        position: relative;
+        right: 0px;
+        left:20px;
+        font-size: 12px;
+     }
+
+     #second .tabContainer .buttonContainer button{
+        height:45px;
+        width:80px;
+       }
+
+    .hd{
+        position: relative;
+        left:10px;
+    }
+
+    .gap{
+        gap: 20px;
+        width: 600px;
+        position: relative;
+        left:80px;
+    }
+
+   
+
+    #history svg{
+        width:100%;
+        height:100%;
+        margin: 0;
+        position: relative;
+        top:20px;
+   }
+
+   #why{
+    padding: 0px;
+   }
+  
+     
+#why .card{
+    width: 22rem;
+    height: 8rem;
+    font-size: 16px;
+} 
+
+
+#footer ul li a{
+   
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+#footer ul{
+    padding: 0;
+}
+
+    
+}
+
+
+@media screen and (min-width:1024px) {
+    #home{
+        padding: 300px 0;
+    }
+}
+
+
+
